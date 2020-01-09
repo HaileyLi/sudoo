@@ -1,0 +1,420 @@
+section#port {
+  background-image: url(../imgs/Port-P1.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+}
+section#port section a:link,
+section#port section a:visited {
+  text-decoration: underline;
+  color: #fb2366;
+}
+
+section#port {
+  padding-top: 15rem;
+}
+
+.d-home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 94%;
+  opacity: 0.7;
+  background-color: #000000;
+}
+
+section#port h1 {
+  font-size: 5vw;
+}
+
+.scroll-indicator {
+  height: 70px;
+  width: 20%;
+  background-image: url(../imgs/heart.png);
+  background-position: center;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  animation-duration: 0.5s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  cursor: pointer;
+  left: 40%;
+}
+
+@keyframes fade {
+  0% {
+    background-size: 50px;
+  }
+  75% {
+    background-size: 60px;
+  }
+  100% {
+    background-size: 50px;
+  }
+}
+.home-content-main {
+  text-align: center;
+}
+
+.love {
+  font-size: 6vw;
+  animation-duration: 3s;
+  animation-name: change;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change {
+  0% {
+    color: #ffcc1e;
+  }
+  25% {
+    color: #003f87;
+  }
+  50% {
+    color: #47d6c1;
+  }
+  75% {
+    color: #fb2366;
+  }
+}
+section#port-P2 {
+  color: black;
+  background: white;
+}
+
+.proj-img {
+  float: left;
+  text-align: center;
+}
+
+.proj-intro {
+  width: 50%;
+  float: right;
+  margin-top: 30px;
+}
+@media screen and (max-width: 414px) {
+  .proj-intro {
+    width: 100%;
+  }
+}
+
+section.d-port {
+  padding: 30px;
+}
+
+#port-P3 .proj-img img {
+  width: 63%;
+  margin: 40px;
+}
+
+section#port-P4 {
+  background: #fff;
+  color: black;
+}
+
+#port-P3 .proj-img {
+  width: 40%;
+  float: right;
+  text-align: center;
+}
+
+.proj-img.port-1 {
+  bottom: -361px;
+  width: 250px;
+  margin-left: 5%;
+}
+
+a.download-img img {
+  width: 29%;
+}
+
+p.proj-title {
+  font-size: 30px;
+}
+
+p.section-content {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 6%;
+  padding-top: 57px;
+  font-size: 74px !important;
+}
+
+.circle-1 {
+  border: 6px solid #003f87;
+  color: #003f87;
+}
+
+.circle-2 {
+  border: 6px solid #ffcc1e;
+  color: #ffcc1e;
+}
+
+.circle-3 {
+  border: 6px solid #fb2366;
+  color: #fb2366;
+}
+
+section#port-P5 {
+  text-align: center;
+}
+
+.person-profile {
+  width: 45%;
+  padding: 40px;
+  background: #fff;
+  color: black;
+  margin: 30px;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+}
+
+section#port-P2 {
+  min-height: 400px;
+}
+
+section#port-P3 {
+  min-height: 400px;
+  background-color: #395771;
+}
+
+section#port-P3 .proj-title img {
+  width: 50%;
+}
+
+section#port-P4 {
+  min-height: 400px;
+}
+
+section#port-P4 .proj-img img {
+  width: 250px;
+  margin-top: -30px;
+  margin-left: 24%;
+}
+
+section#port-P4 .proj-title img {
+  width: 32%;
+  margin-top: -47px;
+}
+
+/*# sourceMappingURL=port.css.map */
+
+section {
+  overflow: hidden;
+}
+
+.proj-intro {
+  margin-bottom: 40px;
+}
+
+section#port-P5 {
+  background-image: url("../imgs/port-section-bg.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.circles div {
+  float: left;
+  font-size: 30px;
+  text-align: center;
+}
+.circles > div {
+  width: 30%;
+}
+.circles div a {
+  display: block;
+  width: 100%;
+  float: left;
+}
+.below-circle-1 {
+  color: #003f87;
+}
+
+.below-circle-2 {
+  color: #ffcc1e;
+}
+
+.below-circle-3 {
+  color: #fb2366;
+}
+.circle {
+  margin-left: 16%;
+}
+
+section#port-P5 {
+  min-height: 440px;
+}
+
+@media screen and (max-width: 1250px) {
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: calc(50% - 98px) !important;
+    padding-top: 57px;
+    font-size: 48px !important;
+  }
+  section#port-P5 {
+    min-height: 400px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .proj-img.port-1 {
+    width: 50%;
+    margin-left: 25%;
+  }
+  section {
+    text-align: center;
+  }
+  .proj-intro {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  #port-P3 .proj-img img {
+    width: 100%;
+    margin: 0;
+  }
+  #port-P3 .proj-img {
+    width: 100%;
+  }
+  section#port-P4 .proj-img img {
+    width: 68%;
+    margin-left: 0;
+  }
+  section#port-P4 .proj-title img {
+    margin-top: -17px;
+  }
+  .circle {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 46px;
+    font-size: 37px !important;
+    margin-left: calc(50% - 75px) !important;
+  }
+  .circles > div {
+    width: 100%;
+  }
+  section#port-P5 {
+    min-height: auto;
+  }
+  section#port-P5 {
+    background-size: auto;
+    background-position: 0 -192px;
+  }
+  .below-circle-1 {
+    color: #003f87;
+    width: 100%;
+  }
+
+  .below-circle-2 {
+    color: #ffcc1e;
+    width: 100%;
+  }
+
+  .below-circle-3 {
+    color: #fb2366;
+    width: 100%;
+  }
+  .person-profile {
+    width: 100%;
+    padding: 40px;
+    background: #fff;
+    color: black;
+    margin: 0px;
+    margin-top: 10px;
+    float: left;
+    text-align: center;
+  }
+  .proj-img {
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+  .circle {
+    margin-left: calc(50% - 72px);
+  }
+}
+
+section#port-P6 {
+  background-image: url("../imgs/port-team-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.left-col .profile-photo img {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.left-col .profile-photo {
+  position: absolute;
+  margin-top: -70px;
+  left: 41%;
+}
+
+.right-col .profile-photo img {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.right-col .profile-photo {
+  position: absolute;
+  margin-top: -70px;
+  left: 85%;
+}
+
+.person-profile.left-col {
+  border-radius: 50px 0;
+}
+.person-profile.right-col {
+  border-radius: 0 50px;
+}
+
+p.name {
+  font-weight: 800;
+  font-size: 27px;
+}
+p.position {
+  color: #818181;
+}
+
+p.description {
+  font-size: 13px;
+  margin-top: 15px;
+  color: #656565;
+}
+
+@media screen and (max-width: 1015px) {
+  .person-profile {
+    width: 100%;
+    margin: 0;
+  }
+  .left-col .profile-photo {
+    left: 72%;
+  }
+  .right-col .profile-photo {
+    left: 0;
+  }
+  section#port-P6 {
+    background-size: auto 100%;
+  }
+  .person-profile.left-col {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}

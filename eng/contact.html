@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Dr. Do Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/footer.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/contact.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="../js/scroll.js"></script>
+  <script src="../js/slideshow.js"></script>
+  <script src="../js/background.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+
+<body id="top">
+  <section id="contact" class="d-contact" data-parallax="scroll" data-natural-width="3000" data-natural-height="2000"
+    data-position-y="center">
+    <header class="d-header">
+      <div class="header-logo">
+        <a class="site-logo" href="index.html">
+          <img src="../imgs/logo.png" alt="Homepage-logo" />
+        </a>
+      </div>
+      <div class="hamburger">
+        <div class="hamburger-menu" id="toggleMenu">
+          <div class="top"></div>
+          <div class="meat"></div>
+          <div class="bottom"></div>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul class="main-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="contact.html" class="active">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contact-section">
+      <h1>Contact Us</h1>
+      <p class="under-header">
+        Reach out for your new project or just say hello.
+      </p>
+      <div class="form">
+        <form class="contact-form">
+          <p class="contact-header">Send us a message</p>
+          <div class="contact-name">
+            <input class="typing" type="text" placeholder="Your Name" />
+            <span class="focus-border"></span>
+          </div>
+          <div class="contact-email">
+            <input class="typing" type="text" placeholder="Your Email" />
+            <span class="focus-border"></span>
+          </div>
+          <div class="contact-message" style="height: 146px;">
+            <textarea class="typing" type="text" placeholder></textarea>
+            <label>Your Message</label> <span class="focus-border"></span>
+          </div>
+          <input value="Submit" class="btn" type="submit" />
+        </form>
+        <div class="contact-info">
+          <p class="contact-header">Contact info</p>
+          <div class="info-section">
+            <p class="info-section-header">Email us</p>
+            <p class="info-section-content">haileyli1002@gmail.com</p>
+          </div>
+          <div class="info-section">
+            <p class="info-section-header">Call us</p>
+            <p class="info-section-content">Mobile:647 936 3239</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer" data-parallax="scroll" data-image-src="imgs/Home-P4.jpg" data-natural-width="3000"
+    data-natural-height="2000" data-position-y="center">
+    <div class="overlay"></div>
+    <div class="row footer-main">
+      <div class="footer-logo">
+        <a class="site-logo" href="index.html">
+          <img src="../imgs/logo.png" alt="Homepage-logo" />
+        </a>
+        <p>
+          We constantly strive for perfection. Trust us, and we will surprise
+          you.
+        </p>
+      </div>
+      <div class="footer-content-line"></div>
+      <div class="footer-content">
+        <div class="footer-content-left">
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our works</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-content-right">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Copyright Dr. Do Studio 2018</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    $("#toggleMenu").click(function () {
+      $(this).toggleClass("active-menu-icon");
+      $(".menu").toggleClass("hamburger-content-show");
+    });
+  </script>
+</body>
+
+</html>

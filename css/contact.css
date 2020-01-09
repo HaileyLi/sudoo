@@ -1,0 +1,216 @@
+.contact-section {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+section#contact {
+  text-align: center;
+  background-image: url(../imgs/contact.jpeg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+}
+
+form.contact-form {
+  width: 60%;
+  display: inline-block;
+  float: left;
+  height: 600px;
+  padding: 60px 60px;
+  text-align: left;
+}
+form.contact-form div {
+  margin-top: 20px;
+  width: 100%;
+  margin: 40px 0;
+  position: relative;
+}
+@media screen and (max-width: 820px) {
+  form.contact-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  form.contact-form {
+    padding: 30px 30px;
+  }
+}
+
+.contact-info {
+  width: 40%;
+  float: left;
+  height: 600px;
+  padding: 60px 60px;
+  text-align: left;
+  border-left: 1px solid #ccc;
+}
+@media screen and (max-width: 820px) {
+  .contact-info {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .contact-info {
+    padding: 30px 30px;
+  }
+}
+
+p.under-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p.contact-header {
+  text-transform: uppercase;
+}
+
+.info-section {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+p.info-section-header {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #ffcc1e;
+}
+
+.typing {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.typing ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffcc1e;
+  transition: 0.4s;
+}
+
+.typing:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+input[type="text"],
+input.typing,
+textarea {
+  -webkit-appearance: none;
+  color: #333;
+  width: 100%;
+  letter-spacing: 1px;
+  background: none;
+  font-size: 15px;
+  line-height: 2;
+  resize: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+textarea.typing {
+  height: 140px;
+}
+
+.contact-message .typing ~ .focus-border {
+  bottom: 10px;
+}
+
+div.contact-message .typing ~ label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 9px;
+  color: #aaa;
+  transition: 0.3s;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-left: 1px;
+}
+div.contact-message .typing:focus ~ label,
+div.contact-message .has-content.typing ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: #ffcc1e;
+  transition: 0.3s;
+}
+
+input[type="submit"] {
+  background-color: #ffcc1e;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #fb2366;
+}
+
+.star-bg,
+.plane-bg,
+.as-bg {
+  position: absolute;
+  top: 0px;
+}
+
+.star-bg {
+  z-index: -1;
+  width: 100%;
+  margin: auto 0;
+  top: 15%;
+}
+@media screen and (max-width: 820px) {
+  .star-bg {
+    top: 25%;
+  }
+}
+
+.plane-bg {
+  z-index: -1;
+  width: 100%;
+  margin: auto 0;
+  top: 15%;
+}
+@media screen and (max-width: 820px) {
+  .plane-bg {
+    top: 25%;
+  }
+}
+
+.as-bg {
+  z-index: -1;
+  width: 100%;
+  margin: auto 0;
+  top: 30%;
+}
+@media screen and (max-width: 820px) {
+  .as-bg {
+    top: 55%;
+  }
+}
+
+.form {
+  overflow: hidden;
+  margin-bottom: 68px;
+}
+
+/*# sourceMappingURL=contact.css.map */
+
+textarea.typing {
+  height: 146px;
+}
+
+.contact-message .typing ~ .focus-border {
+  bottom: 0;
+}
