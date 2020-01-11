@@ -19,26 +19,35 @@
 //     !isNaN(currentValue) == true ? currentValue + toAdd : toAdd;
 // }, framerate);
 $(document).ready(function () {
+
     $("body").mousemove(function (event) {
-        var eye1 = $(".eye1");
-        var eye2 = $(".eye2");
-        var x = (eye1.offset().left) + (eye2.width() / 2);
-        var y = (eye1.offset().top) + (eye2.height() / 2);
-        var rad = Math.atan2(event.pageX - x, event.pageY - y);
-        var rot = (rad * (180 / Math.PI) * -1) + 180;
-        eye1.css({
-            '-webkit-transform': 'rotate(' + rot + 'deg)',
-            '-moz-transform': 'rotate(' + rot + 'deg)',
-            '-ms-transform': 'rotate(' + rot + 'deg)',
-            'transform': 'rotate(' + rot + 'deg)'
-        });
-        eye2.css({
-            '-webkit-transform': 'rotate(' + rot + 'deg)',
-            '-moz-transform': 'rotate(' + rot + 'deg)',
-            '-ms-transform': 'rotate(' + rot + 'deg)',
-            'transform': 'rotate(' + rot + 'deg)'
-        });
+        if ($(".try-button:hover").length == 0 && $(".checkboxes:hover").length == 0 && $(".contact-form:hover").length == 0) {
+            var eye1 = $(".eye1");
+            var eye2 = $(".eye2");
+
+            var x = (eye1.offset().left) + (eye2.width() / 2);
+            var y = (eye1.offset().top) + (eye2.height() / 2);
+            var rad = Math.atan2(event.pageX - x, event.pageY - y);
+            var rot = (rad * (180 / Math.PI) * -1) + 180;
+            eye1.css({
+                '-webkit-transform': 'rotate(' + rot + 'deg)',
+                '-moz-transform': 'rotate(' + rot + 'deg)',
+                '-ms-transform': 'rotate(' + rot + 'deg)',
+                'transform': 'rotate(' + rot + 'deg)'
+            });
+            eye2.css({
+                '-webkit-transform': 'rotate(' + rot + 'deg)',
+                '-moz-transform': 'rotate(' + rot + 'deg)',
+                '-ms-transform': 'rotate(' + rot + 'deg)',
+                'transform': 'rotate(' + rot + 'deg)'
+            });
+        }
+
+
+
     });
+
+
 
     $(".try-button").hover(function () {
         rot = 0;
@@ -111,6 +120,42 @@ $(document).ready(function () {
         $(".love-eye2").removeClass("love-eye2");
     }
     )
+
+    $("#talk").click(function () {
+        var wechat_check = $('#box1').is(":checked");
+        var web_check = $('#box2').is(":checked");
+        var ios_check = $('#box3').is(":checked");
+        var andriod_check = $('#box4').is(":checked");
+        var on_off = [wechat_check, web_check, ios_check, andriod_check];
+        var strs = ["Wechat mini program", "Website", "IOS application", "Andriod application"];
+        var i;
+        var newstr = [];
+        for (i = 0; i < 4; i++) {
+            if (on_off[i] == true) {
+                newstr.push(strs[i]);
+            }
+        }
+        if (newstr.length == 0) {
+            var msg = "Hello!"
+        }
+        if (newstr.length == 1) {
+            var msg = "Hello! I want to ask for a " + newstr[0] + " development project.";
+        }
+
+        if (newstr.length > 1) {
+            var msg = "Hello! I want to ask for ";
+            for (var k = 0; k < newstr.length; k++) {
+                msg += newstr[k];
+
+                if (k != newstr.length - 1) {
+                    msg += " and ";
+                }
+            }
+            msg += " development projects."
+        }
+        $("#your-msg").html(msg);
+    })
+
 });
 
 $(window).bind("scroll", function () {

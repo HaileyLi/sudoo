@@ -5,13 +5,7 @@
   padding-top: 50px;
 }
 
-section#contact {
-  text-align: center;
-  background-image: url(../imgs/contact.jpeg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  -webkit-background-size: cover;
-}
+
 
 form.contact-form {
   width: 60%;
@@ -131,10 +125,10 @@ div.contact-message .typing ~ label {
   position: absolute;
   left: 0;
   width: 100%;
-  top: 9px;
+  top: -19px;
   color: #aaa;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1px;
   margin-left: 1px;
 }

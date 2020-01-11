@@ -170,14 +170,14 @@ section#port-P5 {
 }
 
 .person-profile {
-  width: 45%;
+  width: 44%;
   padding: 40px;
   background: #fff;
   color: black;
   margin: 30px;
-  float: left;
   text-align: center;
   overflow: hidden;
+  display:inline-block;
 }
 
 section#port-P2 {
@@ -272,6 +272,13 @@ section#port-P5 {
     min-height: 400px;
   }
 }
+
+@media screen and (max-width: 945px) {
+  section#port-P5 {
+    background-size: 200%;
+    background-position: 0 -192px;
+  }
+}
 @media screen and (max-width: 770px) {
   .proj-img.port-1 {
     width: 50%;
@@ -317,8 +324,8 @@ section#port-P5 {
     min-height: auto;
   }
   section#port-P5 {
-    background-size: auto;
-    background-position: 0 -192px;
+    background-size: 250%;
+    background-position: center right;
   }
   .below-circle-1 {
     color: #003f87;
@@ -368,7 +375,7 @@ section#port-P6 {
 .left-col .profile-photo {
   position: absolute;
   margin-top: -70px;
-  left: 41%;
+  margin-right: 41%;
 }
 
 .right-col .profile-photo img {
@@ -379,7 +386,7 @@ section#port-P6 {
 .right-col .profile-photo {
   position: absolute;
   margin-top: -70px;
-  left: 85%;
+  margin-left: 356px;
 }
 
 .person-profile.left-col {
@@ -403,6 +410,16 @@ p.description {
   color: #656565;
 }
 
+@media screen and (max-width: 1101px) {
+  .person-profile {
+    width: 43%;
+   
+}
+.right-col .profile-photo {
+  margin-left: 275px;
+}
+}
+
 @media screen and (max-width: 1015px) {
   .person-profile {
     width: 100%;
@@ -412,10 +429,10 @@ p.description {
     left: 72%;
   }
   .right-col .profile-photo {
-    left: 0;
+    margin-left:10px;
   }
   section#port-P6 {
-    background-size: auto 100%;
+    background-size: 100% 100%;
   }
   .person-profile.left-col {
     margin-top: 40px;

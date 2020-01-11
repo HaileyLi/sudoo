@@ -149,12 +149,7 @@ span.dot {
   margin-right: 10%;
 }
 
-section#home {
-  background-image: url(../imgs/Home-P1.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  -webkit-background-size: cover;
-}
+
 
 .home-content {
   padding: 50px 90px;
@@ -209,10 +204,6 @@ section#home {
   padding-top: 9rem;
 }
 
-section#home-P2 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
 
 .d-home-black {
   background: #003f87;
@@ -224,17 +215,7 @@ section#home-P2 {
   padding-top: 20px;
 }
 
-section#home-P3 {
-  padding-bottom: 4rem;
-  padding-top: 4rem;
-  text-align: center;
-}
 
-#home-P3 img {
-  width: 30%;
-  margin: 20px;
-  margin-top: 20px;
-}
 .sub-txt{
   color:#ccc;
 }
