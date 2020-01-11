@@ -60,7 +60,7 @@ section#port h1 {
 }
 
 .love {
-  font-size: 6vw;
+  font-size:    60px;
   animation-duration: 3s;
   animation-name: change;
   animation-iteration-count: infinite;
@@ -133,6 +133,7 @@ a.download-img img {
 
 p.proj-title {
   font-size: 30px;
+  text-align: center;
 }
 
 p.section-content {
@@ -215,6 +216,7 @@ section {
 
 .proj-intro {
   margin-bottom: 40px;
+  text-align:center;
 }
 
 section#port-P5 {
@@ -222,6 +224,7 @@ section#port-P5 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
+  z-index: -1;
 }
 
 .circles div {
@@ -280,6 +283,7 @@ section#port-P5 {
   .proj-intro {
     margin-bottom: 40px;
     width: 100%;
+    text-align:center;
   }
   #port-P3 .proj-img img {
     width: 100%;

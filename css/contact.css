@@ -50,6 +50,8 @@ form.contact-form div {
   .contact-info {
     width: 100%;
     height: 300px;
+    border:none;
+    background:#cccccc1f;
   }
 }
 @media screen and (max-width: 414px) {

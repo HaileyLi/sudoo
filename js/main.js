@@ -39,4 +39,105 @@ $(document).ready(function () {
             'transform': 'rotate(' + rot + 'deg)'
         });
     });
+
+    $(".try-button").hover(function () {
+        rot = 0;
+        $(".eye1").addClass("love-eye1");
+        $(".eye1").removeClass("eye");
+        $(".eye1").removeClass("eye1");
+        $(".eye2").addClass("love-eye2");
+        $(".eye2").removeClass("eye");
+        $(".eye2").removeClass("eye2");
+        $(".love-eye1").css({
+            'transform': 'rotate(' + rot + 'deg)'
+        });
+        $(".love-eye2").css({
+            'transform': 'rotate(' + rot + 'deg)'
+        });
+    }, function () {
+        $(".love-eye1").addClass("eye");
+        $(".love-eye1").addClass("eye1");
+        $(".love-eye1").removeClass("love-eye1");
+        $(".love-eye2").addClass("eye");
+        $(".love-eye2").addClass("eye2");
+        $(".love-eye2").removeClass("love-eye2");
+    }
+    );
+
+    $(".checkboxes").hover(function () {
+        rot = 0;
+        $(".eye1").addClass("love-eye1");
+        $(".eye1").removeClass("eye");
+        $(".eye1").removeClass("eye1");
+        $(".eye2").addClass("love-eye2");
+        $(".eye2").removeClass("eye");
+        $(".eye2").removeClass("eye2");
+        $(".love-eye1").css({
+            'transform': 'rotate(' + rot + 'deg)'
+        });
+        $(".love-eye2").css({
+            'transform': 'rotate(' + rot + 'deg)'
+        });
+    }, function () {
+        $(".love-eye1").addClass("eye");
+        $(".love-eye1").addClass("eye1");
+        $(".love-eye1").removeClass("love-eye1");
+        $(".love-eye2").addClass("eye");
+        $(".love-eye2").addClass("eye2");
+        $(".love-eye2").removeClass("love-eye2");
+    }
+    );
+
+    $(".contact-form").hover(function () {
+        rot = 0;
+        $(".eye1").addClass("love-eye1");
+        $(".eye1").removeClass("eye");
+        $(".eye1").removeClass("eye1");
+        $(".eye2").addClass("love-eye2");
+        $(".eye2").removeClass("eye");
+        $(".eye2").removeClass("eye2");
+        $(".love-eye1").css({
+            'transform': 'rotate(' + rot + 'deg)'
+        });
+        $(".love-eye2").css({
+            'transform': 'rotate(' + rot + 'deg)'
+        });
+    }, function () {
+        $(".love-eye1").addClass("eye");
+        $(".love-eye1").addClass("eye1");
+        $(".love-eye1").removeClass("love-eye1");
+        $(".love-eye2").addClass("eye");
+        $(".love-eye2").addClass("eye2");
+        $(".love-eye2").removeClass("love-eye2");
+    }
+    )
+});
+
+$(window).bind("scroll", function () {
+    if ($(this).scrollTop() + 100 >= $('#home').position().top) {
+        $(".home-link").addClass("home-active");
+        $(".service-link").removeClass("service-active");
+        $(".about-link").removeClass("about-active");
+        $(".contact-link").removeClass("contact-active");
+
+    }
+    if ($(this).scrollTop() + 100 >= $('#service').position().top) {
+        $(".home-link").removeClass("home-active");
+        $(".service-link").addClass("service-active");
+        $(".about-link").removeClass("about-active");
+        $(".contact-link").removeClass("contact-active");
+    }
+    if ($(this).scrollTop() + 100 >= $('#about').position().top) {
+        $(".home-link").removeClass("home-active");
+        $(".service-link").removeClass("service-active");
+        $(".about-link").addClass("about-active");
+        $(".contact-link").removeClass("contact-active");
+    }
+    if ($(this).scrollTop() + 100 >= $('#contact').position().top) {
+        $(".home-link").removeClass("home-active");
+        $(".service-link").removeClass("service-active");
+        $(".about-link").removeClass("about-active");
+        $(".contact-link").addClass("contact-active");
+    }
+
 });
