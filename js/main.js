@@ -28,7 +28,7 @@ $(document).ready(function () {
             var x = (eye1.offset().left) + (eye2.width() / 2);
             var y = (eye1.offset().top) + (eye2.height() / 2);
             var rad = Math.atan2(event.pageX - x, event.pageY - y);
-            var rot = (rad * (180 / Math.PI) * -1) + 180;
+            var rot = (rad * (180 / Math.PI) * -1) - 180;
             eye1.css({
                 '-webkit-transform': 'rotate(' + rot + 'deg)',
                 '-moz-transform': 'rotate(' + rot + 'deg)',
